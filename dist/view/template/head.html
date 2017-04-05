@@ -1,0 +1,7 @@
+<div class="head" >
+	<span ng-show="states" class="h1">10秒定制职位</span>
+	<button ng-click="toLogin()"   ng-class="{true: 'goto', false: 'nogoto'}[states]">
+		<span ng-show="states" >去登陆</span>
+		<span ng-show="!states" >你好!<span>{{tologinspan.name}}</span></span>
+	</button>
+</div>

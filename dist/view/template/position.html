@@ -1,0 +1,13 @@
+<div class="main">
+	<ul>
+		<li ng-repeat="item in list" >
+			<img ng-src="{{item.imageUrl}}" alt="">
+			<div class="main-left">
+
+				<p>{{item.companyName}}[{{item.cityName}}] {{item.industryName}} {{item.scaleName}}</p>
+				<h2>{{item.salaryName}}</h2>
+				<p>{{item.date}}</p>
+			</div>
+		</li>
+	</ul>
+</div>

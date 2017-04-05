@@ -1,0 +1,19 @@
+<div class="login">
+	<form method="post">
+		<div class="lg">
+			<img src="images/account.png" alt="">
+			<input type="text" placeholder="输入用户名" ng-model="id" ng-blur="checkPhone()">
+			
+		</div>
+		<span ng-bind="spanCheckPhone" ng-show="flag1" class="spanPhone"></span>
+		<div>
+			<img src="images/lock.png" alt="">
+			<input type="password" placeholder="输入密码" ng-model="pwd">
+		</div>
+			<span ng-bind="spanCheckPwd" ng-show="flag2" class="spanPwd"></span>
+		<div class="bt">
+			<input type="submit" value="登录" ng-click="loginSubmit()">
+			<input type="button" value="注册" ui-sref="regist">
+		</div>
+	</form>
+</div>

@@ -1,0 +1,22 @@
+<div class="content1">
+	<div >
+		<p>{{list.name}}<span>{{list.salaryName}}</span></p>
+		<img ng-src="{{img}}" alt="" ng-click="chooseImg()" ng-show="!states">
+		<p>{{list.cityName}}<span>{{list.experience}}</span>{{list.education}}</p>
+		<p>{{list.benefit}}</p>
+	</div>
+	<div class="content1-1" ui-sref="company({id:company.id})">
+		<img ng-src="{{company.imageUrl}}" alt="">
+		<p>{{company.name}}</p>
+		<p>{{company.industry}}/{{company.state}}/{{company.people}}</p>
+	</div>
+	<div class="content1-2"></div>
+	<div class="content1-3">
+		<h2>职位描述</h2>
+		<div>
+		<pre>{{list.description}}</pre>
+		</div>
+	</div>
+	<!-- <div ng-class="{true: 'star-active', false: 'star'}[image]" ng-click="chooseImg()" ></div> -->
+
+</div>

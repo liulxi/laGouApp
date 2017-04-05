@@ -1,0 +1,24 @@
+<div class="regist">
+	<form  method="post">
+		<div>
+			<img src="images/account.png" alt="">
+			<input type="text" placeholder="输入用户名" id="id" ng-model="id" ng-blur="doCheckPhone()">
+		</div>
+		<div>
+			<img src="images/account.png" alt="">
+			<input type="password" placeholder="设置6位以上的密码" id="pwd" ng-model="pwd" ng-blur="doCheckPwd()">
+		</div>
+		<div>
+			<input type="text" placeholder="短信验证码" id="sed"ng-model="sed" ng-blur="doCheckNum()">
+			<button ng-click="getNum()" ng-bind="str"></button>
+		</div>
+		<div>
+			<input type="button" value="登录" ng-click="backLogin()">
+			<input type="submit" value="注册"  ng-click="registSubmit()">
+		</div>
+		<span ng-bind="spanPhone"></span>
+		<span ng-bind="spanPwd"></span>
+		<span ng-bind="spanSed"></span>
+		<!-- <span>{{user}}</span> -->
+	</form>
+</div>

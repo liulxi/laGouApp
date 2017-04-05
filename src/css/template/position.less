@@ -1,0 +1,485 @@
+@bg: #eee;
+@color: #333;
+@font-size: 0.3rem;
+@basewidth: 100%;
+.main {
+    width: @basewidth;
+    height: auto;
+    font-size: @font-size;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: @bg;
+    ul li {
+        height: 1.3rem;
+        padding: 0.16rem 0.1rem;
+        border-bottom: 0.01rem solid #ccc;
+        background: #fff;
+    }
+    ul li:last-child {
+        height: 1.6rem;
+    }
+    ul li img {
+        width: 1.3rem;
+        height: 1.3rem;
+        float: left;
+    }
+    .main-left {
+        padding-left: 1.6rem;
+    }
+    h2 {
+        color: red;
+    }
+}
+
+//登录前-职位详情
+.content1 {
+    width: @basewidth;
+    height: 11.8rem;
+    font-size: @font-size;
+    color: @color;
+    background-color: @bg;
+    div:first-child {
+        height: 3.6rem;
+        background-color: #fff;
+        padding-left: 0.3rem;
+        border-bottom: 0.01rem solid #ccc;
+        p {
+            padding-top: 0.8rem;
+            line-height: 0.4;
+        }
+        p:first-of-type span {
+            color: red;
+            margin-left: 0.66rem;
+        }
+        p:nth-of-type(2) span {
+            color: @color;
+            margin: 0 0.66rem;
+        }
+        img{
+            position:absolute;
+            right:0.5rem;
+        }
+    }
+    .content1-1 {
+        height: 1.6rem;
+        padding-top: 0.25rem;
+        background-color: #fff;
+        img {
+            width: 1rem;
+            height: 1rem;
+            float: left;
+            position: absolute;
+            left: 0.4rem
+        }
+        p {
+            position: absolute;
+            left: 1.8rem;
+        }
+        p:last-of-type {
+            margin-top: 0.6rem;
+        }
+    }
+    .content1-2 {
+        height: 0.2rem;
+        background-color: #eee;
+    }
+    .content1-3 {
+        height: 2rem;
+        padding-left: 0.3rem;
+        background-color: #fff;
+        h2 {
+            font-weight: bold;
+            font-size: 0.32rem;
+            padding: 0.2rem 0;
+        }
+        div {
+            border-top: 0.01rem solid #ccc;
+        }
+    }
+    .star{
+        background:url(../../images/star.png);
+        z-index: 50;
+        background-size: 100%;
+    }
+    .star-active{
+        background:url(../../images/star-active.png);
+        z-index: 50;
+        background-size: 100%;
+
+    }
+}
+
+//登录前-公司职位-技术
+.content2 {
+    width: @basewidth;
+    height: 12.5rem;
+    font-size: @font-size;
+    color: @color;
+    background-color: @bg;
+    .content2-1 {
+        height: 1.6rem;
+        padding-top: 0.25rem;
+        background-color: #fff;
+        border-bottom: 1px solid #ccc;
+        img {
+            width: 1rem;
+            height: 1rem;
+            float: left;
+            position: absolute;
+            left: 0.4rem
+        }
+        p {
+            position: absolute;
+            left: 1.8rem;
+        }
+        p:last-of-type {
+            margin-top: 0.6rem;
+        }
+    }
+    .content2-2 {
+        height: 2.3rem;
+        padding-left: 0.3rem;
+        background-color: #fff;
+        border-bottom: 0.01rem solid #ccc;
+        h2 {
+            padding-top: 0.3rem;
+            font-size: 0.36rem;
+            font-weight: bold;
+        }
+        ul li {
+            float: left;
+        }
+        ul li button {
+            width: 1.5rem;
+            height: 0.72rem;
+            font-size: 0.32rem;
+            margin-top: 0.7rem;
+            background-color: #def8f5;
+            -moz-border-radius: 0.75rem;
+            /* Firefox */
+            -webkit-border-radius: 0.75rem;
+            /* Safari 和 Chrome */
+            border-radius: 0.75rem;
+        }
+        ul li button:first-of-type {
+            background-color: #12d5b5;
+            // color: #fff;
+            margin-right: 0.3rem;
+        }
+        .isSel {
+            background-color: #12d5b5;
+            color: #fff;
+        }
+        // .notSel{
+        //      background-color: #def8f5;
+        //     color: #111;
+        // }
+    }
+    .content2-3 {
+        height: 1.9rem;
+        padding-left: 0.3rem;
+        background-color: #fff;
+        div {
+            float: left;
+            p {
+                margin-top: 0.4rem;
+                font-size: 0.32rem;
+            }
+        }
+     span {
+            float: right;
+            padding-right: 0.5rem;
+            line-height: 1.9rem;
+            color:red;
+        }
+    }
+}
+//去登录
+.goLogin {
+    width: 100%;
+    height: 12.5rem;
+    background-color: @bg;
+   
+    button.bnt11 {
+        width: 90%;
+        height: 0.8rem;
+        background-color: #12d5b5;
+        font-size: @font-size ;
+        position: absolute;
+        top:55%;
+        left:5%;
+
+    }
+ .exit_login{
+
+    text-align: center;
+    font-size: 0.32rem;
+    img{
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-top: 1.5rem;
+        border-radius: 1.5rem;
+    }
+    p{
+        margin: 0.5rem;
+    }
+  
+     ul{
+      width: 6.5rem;
+      height: 1.9rem;
+      margin:  0.5rem auto;
+      display: flex;
+      justify-content: space-between;
+      }
+    
+
+    ul li{
+        text-align: center;
+        line-height: 1.9rem;
+        color: #fff;
+        width: 3.0rem;
+        height: 1.9rem;
+        background-color: #12d5b5;
+        float: left;
+    }
+
+    button.exitButton{
+        margin:0 auto;
+        font-size: 0.32rem;
+        color:#fff;
+        width: 90%;
+        height: 0.8rem;
+        background-color: #ff0000;
+    }
+
+}
+}
+ 
+//登录
+.login {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../../images/background.png) no-repeat 50%;
+    background-size: 100%;
+    div {
+        width: 6rem;
+        height: 0.8rem;
+        background: rgba(0, 0, 0, 0.1);
+        position: absolute;
+        left: 0.75rem;
+        top: 5.4rem;
+        img {
+            padding: 0.14rem 0.3rem;
+            background: rgba(0, 0, 0, 0.3);
+        }
+        input {
+            width: 80%;
+            height: 0.8rem;
+            font-size: 0.3rem;
+            float: right;
+            background: rgba(0, 0, 0, 0.01);
+            text-indent: 0.2rem;
+        }
+        :-moz-placeholder {
+            /* Mozilla Firefox 4 to 18 */
+            color: #fff;
+            opacity: 1;
+        }
+        ::-moz-placeholder {
+            /* Mozilla Firefox 19+ */
+            color: #fff;
+            opacity: 1;
+        }
+        input:-ms-input-placeholder {
+            color: #fff;
+            opacity: 1;
+        }
+        input::-webkit-input-placeholder {
+            color: #fff;
+            opacity: 1;
+        }
+    }
+   
+    .spanPhone{
+        position: absolute;
+        top:7.2rem;
+        left:0.75rem;
+        color: red;
+    }
+    .spanPwd{
+        position: absolute;
+        top:7.6rem;
+        left:0.75rem;
+        color: red;
+    }
+    div:nth-of-type(2) {
+        position: absolute;
+        left: 0.75rem;
+        top: 6.22rem;
+    }
+    // div:nth-of-type(3) {
+    .bt{
+        height:auto;
+        position: absolute;
+        top: 8.3rem;
+        opacity: 1;
+        input{
+            width: 6rem;
+            height: 0.8rem;
+        }
+        input:first-of-type{
+            font-size: 0.36rem;
+            font-weight: bold;
+            color: #fff;
+            background-color: #12d5b5;
+            margin-bottom: 0.4rem;
+        }
+        input:last-of-type{
+            font-size: 0.36rem;
+            font-weight: bold;
+            color: #12d5b5;
+            border:0.01rem solid #12d5b5;
+            background-color: #c2e8f1;
+             background: rgba(0, 0, 0, 0.3);
+        }
+    }
+}
+//注册
+.regist{
+     width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../../images/background.png) no-repeat 50%;
+    background-size: 100%;
+    maigin:0 auto;
+     div {
+        width: 6rem;
+        height: 0.8rem;
+        background: rgba(0, 0, 0, 0.1);
+        position: absolute;
+        left: 0.75rem;
+        top: 1.1rem;
+        img {
+            padding: 0.14rem 0.3rem;
+            background: rgba(0, 0, 0, 0.3);
+        }
+        input {
+            width: 80%;
+            height: 0.8rem;
+            font-size: 0.3rem;
+            float: right;
+            background: rgba(0, 0, 0, 0.01);
+            text-indent: 0.2rem;
+        }
+        :-moz-placeholder {
+            /* Mozilla Firefox 4 to 18 */
+            color: #fff;
+            opacity: 1;
+        }
+        ::-moz-placeholder {
+            /* Mozilla Firefox 19+ */
+            color: #fff;
+            opacity: 1;
+        }
+        input:-ms-input-placeholder {
+            color: #fff;
+            opacity: 1;
+        }
+        input::-webkit-input-placeholder {
+            color: #fff;
+            opacity: 1;
+        }
+    }
+     div:nth-of-type(2) {
+        position: absolute;
+        left: 0.75rem;
+        top: 2rem;
+    }
+    div:nth-of-type(3){
+        position: absolute;
+        top:3.5rem;
+        input{
+            width: 3.8rem;
+            float: left;
+            background: rgba(0, 0, 0, 0.2);
+        }
+        button{
+            width: 1.7rem;
+            height: 0.8rem;
+            float: right;
+            color: #fff;
+            border:0.01rem solid #12d5b5;
+            text-align: center;
+            line-height: 0.85rem;
+            font-size: 0.32rem;
+            background: rgba(0, 0, 0, 0.2);
+        }
+    }
+    div:nth-of-type(4) {
+        height: auto;
+        position: absolute;
+        top: 5.5rem;
+        opacity: 1;
+        input{
+            width: 6rem;
+            height: 0.8rem;
+        }
+        input:first-of-type{
+            font-size: 0.36rem;
+            font-weight: bold;
+            color: #fff;
+            background-color: #12d5b5;
+            margin-bottom: 0.4rem;
+        }
+        input:last-of-type{
+            font-size: 0.36rem;
+            font-weight: bold;
+            color: #12d5b5;
+            border:0.01rem solid #12d5b5;
+            background-color: #c2e8f1;
+             background: rgba(0, 0, 0, 0.3);
+        }
+    }
+    span{
+        font-size: 0.24rem;
+        color:red;
+        display: block;
+        position: absolute;
+        left: 0.75rem;
+        top:4.3rem;
+    }
+    span:nth-of-type(2){
+        position: absolute;
+        top:4.7rem;
+    }
+      span:nth-of-type(3){
+        position: absolute;
+        top:5.1rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

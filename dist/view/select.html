@@ -1,0 +1,17 @@
+<div class="select">
+    <div class="dark" ng-show="flag"></div>
+    <div class="dark" ng-show="flag1"></div>
+    <div class="dark" ng-show="flag2"></div>
+    <ul class="city" ng-show="flag">
+        <li ng-repeat="item in city">{{item.name}}</li>
+        <button ng-click="calc($event)">取消</button>
+    </ul>
+    <ul class="salary" ng-show="flag1">
+        <li ng-repeat="lis in salary">{{lis.name}}</li>
+        <button ng-click="calc($event)">取消</button>
+    </ul>
+    <ul class="scale" ng-show="flag2">
+        <li ng-repeat="list in scale">{{list.name}}</li>
+        <button ng-click="calc($event)">取消</button>
+    </ul>
+</div>

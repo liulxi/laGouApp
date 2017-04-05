@@ -1,0 +1,35 @@
+
+<div class="main">
+    <ul ng-show="flag1">
+        <li ng-repeat="item in list" ui-sref="show({id:item.id})">
+            <img ng-src="{{item.imageUrl}}" alt="">
+            <div class="main-left">
+                <p>{{item.companyName}}[{{item.cityName}}] {{item.industryName}} {{item.scaleName}}</p>
+                <h2>{{item.salaryName}}</h2>
+                <p>{{item.date}}</p>
+            </div>
+        </li>
+    </ul>
+    <ul ng-show="flag2">
+        <li ng-repeat="item in it" ui-sref="show({id:item.id})">
+            <img ng-src="{{item.imageUrl}}" alt="">
+            <div class="main-left">
+                <p>{{item.companyName}}[{{item.cityName}}] {{item.industryName}} {{item.scaleName}}</p>
+                <h2>{{item.salaryName}}</h2>
+                <p>{{item.date}}</p>
+            </div>
+            <span>{{list.state}}</span>
+        </li>
+    </ul>
+    <ul ng-show="flag3">
+        <li ng-repeat="item in it" ui-sref="show({id:item.id})">
+            <img ng-src="{{item.imageUrl}}" alt="">
+            <div class="main-left">
+                <p>{{item.companyName}}[{{item.cityName}}] {{item.industryName}} {{item.scaleName}}</p>
+                <h2>{{item.salaryName}}</h2>
+                <p>{{item.date}}</p>
+            </div>
+            <span>{{list.state}}</span>
+        </li>
+    </ul>
+</div>

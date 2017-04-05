@@ -1,0 +1,12 @@
+<div class="goLogin">
+    <div class="exit_login" ng-show="!states">
+        <img ng-src="{{pic}}" alt="">
+        <p>{{globalName.name}}</p>
+        <ul>
+           <li ui-sref="mySend">投递</li>
+            <li ui-sref="myFavorite">收藏</li>
+        </ul>
+        <button class="exitButton" ng-click="exitLogin()">退出登录</button>
+    </div>
+    <button ui-sref="login" class="bnt11" ng-show="states">去登陆</button>
+</div>
